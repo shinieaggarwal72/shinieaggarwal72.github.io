@@ -9,6 +9,11 @@ body {
     background-color: #D4C9BE;
     color: #333;
 }
+.typed-text {
+    color: #123458;
+    font-weight: bold;
+}
+
 
 .container {
     width: 80%;
@@ -182,15 +187,13 @@ section {
 }
 .ongoing {
     display: inline-block;
-    padding: 5px 12px;
-    
+    padding: 6px 14px;
+    background-color: #ffcc00;
     color: #333;
-    
     font-size: 0.9rem;
     font-weight: bold;
-    
-    margin: 0;
-    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 
@@ -328,4 +331,19 @@ nav ul li a:hover {
     nav ul li {
         margin: 15px 0;
     }
+}
+
+.live-btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.live-btn:hover {
+    background-color: #3e8e41;
 }
