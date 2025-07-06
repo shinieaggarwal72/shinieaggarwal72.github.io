@@ -58,11 +58,13 @@ section {
     text-align: center;
 }
 .about h2 {
+    color: #123458;
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
 .about h3 {
+    color: #123458;
     font-size: 1.5rem;
     color: #555;
 }
