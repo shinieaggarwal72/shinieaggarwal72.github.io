@@ -232,6 +232,74 @@ section {
 }
 
 
+@media (max-width: 768px) {
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav {
+        height: auto;
+        padding: 15px 0;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .about {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .about h2 {
+        font-size: 2rem;
+    }
+
+    .about h3 {
+        font-size: 1.2rem;
+    }
+
+    .resume h2, .projects h2, .contact h2 {
+        font-size: 2rem;
+    }
+
+    .resume p, .contact p, .project p {
+        font-size: 1rem;
+    }
+
+    .project {
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    .project h3 {
+        font-size: 1.2rem;
+    }
+
+    .project a {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+
+    .contact {
+        padding: 40px 20px;
+    }
+}
+
+
+
 
 
 
