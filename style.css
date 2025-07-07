@@ -10,6 +10,28 @@ body {
     color: #333;
     cursor: url('icons/cursor-star.svg'), auto;
 }
+#book-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    padding: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#book-float img {
+    width: 30px;
+    height: 30px;
+}
+
+#book-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
 
 
 /* a, button {
@@ -25,6 +47,9 @@ body {
 .container {
     width: 80%;
     margin: 0 auto;
+}
+a, button, .clickable {
+    cursor: url('icons/hand-pointer.png'), pointer;
 }
 
 nav {
@@ -186,7 +211,11 @@ section {
 .project a:hover {
     background-color: #0d2a4d;
 }
-
+/* .project-card:hover, button:hover {
+    box-shadow: 0 0 15px rgba(0, 150, 255, 0.7);
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+} */
 
 .project:hover {
     transform: translateY(-5px);
@@ -197,8 +226,8 @@ section {
     margin-top: 15px;
     display: flex;
     align-items: center;
-    gap: 10px;  /* Space between icons */
-    flex-wrap: wrap;  /* Allows wrapping on smaller screens */
+    gap: 10px;  
+    flex-wrap: wrap;  
     margin-bottom: 15px;
 }
 
@@ -275,7 +304,7 @@ section {
     width: 40px;
     height: 40px;
     transition: transform 0.3s ease;
-    cursor: pointer;
+    cursor: url('icons/hand-pointer.png'), pointer;
     opacity: 0.7; 
     filter: grayscale(100%); 
 }
@@ -284,8 +313,8 @@ section {
 }
 .contact-icons img:hover {
     transform: scale(1.2);
-    opacity: 1; /* Fully visible */
-    filter: grayscale(0%) brightness(0); /* Turns solid black */
+    opacity: 1; 
+    filter: grayscale(0%) brightness(0); 
 }
 
 
@@ -313,6 +342,7 @@ section {
     display: none;
     color: #123458; 
 }
+
 
 
 nav ul {
