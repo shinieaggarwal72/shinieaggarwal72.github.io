@@ -88,15 +88,16 @@ section {
 
 .about{
     display: flex;
-    flex-direction: column;
-    justify-content: center; 
+    flex-direction: column; 
+    justify-content: flex-start;
     align-items: center;      
     height: 100vh;           
     text-align: center;
+    padding-top: 280px;
 }
 .about h2 {
     color: #123458;
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 10px;
 }
 
@@ -109,12 +110,13 @@ section {
 .resume {
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     text-align: center;
     background: linear-gradient(135deg, #D4C9BE 40%, #f0eae2 100%);
     padding: 20px;
+    padding-top: 280px;
 }
 
 .resume h2 {
@@ -262,11 +264,12 @@ section {
     min-height: 100vh;
     background: linear-gradient(135deg, #D4C9BE 30%, #f0eae2 100%);
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     text-align: center;
     padding: 20px;
+    padding-top: 280px;
 }
 
 .contact h3 {
