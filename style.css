@@ -185,6 +185,31 @@ section {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
+
+.tech-stack {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;  /* Space between icons */
+    flex-wrap: wrap;  /* Allows wrapping on smaller screens */
+    margin-bottom: 15px;
+}
+
+.tech-stack img {
+    width: 28px;
+    height: 28px;
+    opacity: 0.8;
+    filter: grayscale(100%);
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+}
+
+.tech-stack img:hover {
+    transform: scale(1.2);
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
 .ongoing {
     display: inline-block;
     padding: 6px 14px;
