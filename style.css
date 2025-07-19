@@ -25,6 +25,33 @@ a, button, .clickable {
     color: black;
     font-weight: bold;
 }
+.popup {
+  font-family: 'VT323', monospace;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 300px;
+  padding: 10px;
+  background: white;
+  color: black;
+  border: 2px solid black;
+  box-shadow: 4px 4px 0 black;
+  z-index: 999;
+  font-size: 18px;
+}
+.hidden {
+  display: none;
+}
+.popup button {
+  margin-top: 10px;
+  background: black;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
 
 /* Container */
 .container {
@@ -237,16 +264,19 @@ section {
     opacity: 1;
 }
 
-/* Ongoing badge */
 .ongoing {
     display: inline-block;
     padding: 6px 14px;
     background-color: #ffcc00;
-    color: #333;
-    font-size: 0.9rem;
-    font-weight: bold;
-    border-radius: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: #000;
+    font-size: 1rem;
+    font-family: 'VT323', monospace; 
+    font-weight: normal;
+    border: 2px solid #000;
+    border-radius: 0; 
+    box-shadow: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 /* Contact section */
