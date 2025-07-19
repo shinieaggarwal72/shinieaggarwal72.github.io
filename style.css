@@ -189,13 +189,23 @@ section {
     color: #CBCBCB;
     text-decoration: none;
     padding: 8px 16px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    border: 2px solid #888;
+    border-radius: 0; /* removes curve for blocky look */
+    font-size: 1.2rem;
+    font-family: 'VT323', monospace;
+    
+    image-rendering: pixelated;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: url('icons/hand-pointer.png'), pointer;
 }
 
+
 .project a:hover {
-    background-color: #0d2a4d;
+    transform: translate(-1px, -1px);
+    box-shadow: 1px 1px 0 1px #CBCBCB, 1.5px 1.5px 0 2px black;
+    background-color: #333;
 }
+
 
 .project:hover {
     transform: translateY(-5px);
