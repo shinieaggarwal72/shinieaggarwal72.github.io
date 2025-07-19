@@ -162,12 +162,13 @@ section {
     background: #CBCBCB;
     padding: 20px;
     margin: 20px auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border: 4px solid black;
+    box-shadow: none; 
     max-width: 700px;
     text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    animation: fadeSlideUp 1s forwards;
+    image-rendering: pixelated;
+    transition: transform 0.2s steps(2), box-shadow 0.2s steps(2);
+    animation: fadeSlideUp 1s steps(2) forwards;
 }
 
 .project h3 {
