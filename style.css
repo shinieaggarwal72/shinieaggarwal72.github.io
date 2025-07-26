@@ -368,30 +368,131 @@ section {
 }
 
 /* Mobile nav */
+/* For tablets and small screens */
 @media (max-width: 768px) {
-    .hamburger {
-        display: block;
-    }
+  /* Hamburger Menu */
+  .hamburger {
+    display: block;
+  }
 
-    nav ul {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        background-color: white;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        z-index: 99;
-    }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 99;
+  }
 
-    nav ul.show {
-        display: flex;
-    }
+  nav ul.show {
+    display: flex;
+  }
 
-    nav ul li {
-        margin: 15px 0;
-    }
+  nav ul li {
+    margin: 15px 0;
+  }
+
+  /* Section Padding */
+  .about,
+  .resume,
+  .contact {
+    padding-top: 150px;
+  }
+
+  /* Headings */
+  .about h2,
+  .resume h2,
+  .projects h2,
+  .contact h3 {
+    font-size: 2rem;
+  }
+
+  .about h3 {
+    font-size: 1.2rem;
+  }
+
+  /* Paragraphs and Text */
+  .resume p,
+  .project p,
+  .contact p {
+    font-size: 1rem;
+  }
+
+  .resume li {
+    font-size: 1rem;
+  }
+
+  .project h3 {
+    font-size: 1.2rem;
+  }
+
+  .project a {
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
+
+  /* Contact icons */
+  .contact-icons {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .contact-icons img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .contact-icons img.linkedin-icon {
+    width: 24px;
+    height: 24px;
+  }
 }
+
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+  }
+
+  .project {
+    padding: 15px;
+    margin: 15px 0;
+    max-width: 100%;
+  }
+
+  .tech-stack img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .ongoing {
+    font-size: 0.9rem;
+    padding: 4px 10px;
+  }
+
+  .about h2 {
+    font-size: 1.8rem;
+  }
+
+  .about h3 {
+    font-size: 1rem;
+  }
+
+  .project h3 {
+    font-size: 1.1rem;
+  }
+
+  .project p {
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+}
+
 
 
